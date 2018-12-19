@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('assets/SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeForce';
+  src: url('assets/GeForce-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+#navBar {
+  position: fixed;
+  left: 0;
+  top: -2.75em;
+}
+
+#navList {
+  list-style-type: none;
+  display: flex;
+  transform: rotate(90deg);
+  transform-origin: 2.9% 19%;
+}
+
+.navItem:not(.active):hover {
+  bottom: 1.8em;
+  height: 145%;
+  animation-name: easeExpand;
+  animation-duration: 0.5s;
+}
+
+@keyframes easeExpand {
+  from {bottom: 0;}
+  to {bottom: 1.8em;}
+}
+
+.navItem {
+  list-style-type: none;
+  padding: 0.4em 0.7em;
+  margin-right: 0.2em;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  font-size: 1.757vh;
+  font-family: 'GeForce';
+  background-color: #aa60ff;
+  position: relative;
+  bottom: 0;
+}
+
+#navList > a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  background-color: black;
+  position: relative;
+  bottom: 1.8em;
+  height: 148%;
+}
+
+.main {
+  /* outline: dotted red; */
+  margin: 0 31em 10em 31em;
+  padding-top: 0em;
+  position: relative;
+}
+
+.header {
+  font-family: "GeForce";
+
+  color: #aa60ff;
+  font-size: 4vw;
+  padding-bottom: 0.0em;
+  border-bottom: solid black 0.10em;
+  margin-top: 0;
+  padding-top: 0.25em;
+  background-color: #ffffff;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.letterLabel p {
+  font-size: 4vw;
+  font-family: "GeForce";
+  color: white;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.letterLabel {
+  background-color: #aa60ff;
+  border: solid #aa60ff;
+  border-radius: 50%;
+  text-align: center;
+  width: 8.0vw;
+  height: 8.0vw;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+  top: 2em;
+  z-index: 1;
+  display: table;
+}
+
+.letterLabel2 {
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  left: 0;
+  position: absolute;
+  top: 2em;
+  z-index: 0;
+  border: solid #aa60ff;
+  border-radius: 50%;
+  background-color: #aa60ff;
+  display: table;
+}
+
+.letterLabel2 p {
+  font-size: 1.5em;
+  font-family: "GeForce";
+  color: white;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imgContainer {
+  text-align: center;
+  position: relative;
+}
+#wild{
+  letter-spacing:-0.03em;
+}
+
+.imgCaption {
+  font-family: "SFProDisplay";
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+  margin-top: 0.2em;
+}
+
+.video {
+  margin-bottom: 5em;
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+#powerVideo {
+  width: 100%;
+  height: auto;
+}
+
+.splash {
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 2.5em;
+  z-index: -2;
+}
+
+/* individ image ids */
+
+#abstractSplash, #abstractSplashHOV {
+  width: 50%;
+}
+
+#abstractSplash {
+  border: solid 0.1em #ffffff;
+}
+
+#abstractSplashHOV {
+  /*border: solid 0.1em #f7ce3a;*/
+  border-radius: 2em;
+}
+
+#threeDFlat1, #threeDFlat1HOV {
+  width: 80%;
+}
+
+#threeDFlat1 {
+  border: solid 0.1em #ffffff;
+ }
+
+#threeDFlat1HOV {
+  border: solid 0.1em black;
+  border-radius: 2em;
+ }
+
+#threeDFlat2, #threeDFlat2HOV {
+  width: 70%;
+  border: solid black 0.1em;
+}
+
+#threeDFlat2 {
+  border: solid 0.1em #ffffff;
+  outline: solid grey 0.1em;
+
+ }
+
+#threeDFlat2HOV {
+  border: solid 0.1em black;
+  border-radius: 2em;
+ }
+
+#outblock, #outblockHOV {
+  width: 80%;
+  border-radius: 2em;
+}
+
+#designstudio, #designstudioHOV {
+  width: 80%;
+  margin-bottom:2em;
+  border-radius: 2em;
+}
+#mold, #moldHOV {
+  width: 90%;
+}
+#meincomputer, #meincomputerHOV {
+  width: 80%;
+    border-radius: 2em;
+    margin-bottom:2em;
+}
+
+
+#doc3d, #doc3dHOV {
+  width: 30%;
+  border-radius: 2em;
+}
+#sucuk, #sucukHOV {
+  width: 40%;
+  border-radius: 2em;
+}
+#ada, #adaHOV {
+  width: 60%;
+  border-radius: 2em;
+}
+
+#ocmode, #ocmodeHOV {
+  width: 30%;
+  border-radius: 2em;
+  margin-bottom:2em;
+}
+#ocmode{
+   border:1px solid #021a40;
+}
+#doc3d2, #doc3d2HOV {
+  width: 45%;
+  border-radius: 2em;
+}
+#doc3d {
+  outline: solid grey 0.1em;
+}
+
+#dental3d, #dental3dHOV {
+  width: 95%;
+  border-radius: 2em;
+}
+
+#typeColor {
+  width: 100%;
+}
+
+/* stop */
+
+.mainBody {
+  font-family: sans-serif;
+}
+
+.bodyHeader {
+  color: black;
+  font-weight: bold;
+  font-size: 2.60em;
+  margin: 2em 0 0.0em 0;
+}
+
+.lingHeader {
+  font-size: 1.2em;
+  margin: 0.0em 0 0.0em 0;
+  font-weight: bold;
+}
+
+.bodyText {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.sftQuote {
+  font-family: "SFProDisplay";
+  text-align: center;
+}
+
+.quoteBody {
+  font-size: 3.5em;
+  /*margin: 1em 3.5em 0 3.5em;*/
+
+  color: #aa60ff;
+}
+
+.quoteAuthor {
+  font-size: 3.5em;
+  color: #aa60ff;
+  margin-top:0em;
+  margin-bottom: 2em;
+}
+
+/* part list */
+
+#partTable {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3em;
+}
+
+.partRow {
+  display: table-row;
+}
+
+.partCell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  width: 25em;
+  height: 25em;
+}
+
+.partImg {
+  max-width: 85%;
+  max-height: 85%;
+  height: auto;
+}
+
+/* stop */
+
+.mobile {
+  display: none;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.mobile img {
+  width: 70%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1800px) {
+  .quoteBody {
+    margin: 1em 1.5em 0 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1350px) {
+  .main {
+    margin: 0 21em 10em 21em;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1200px) {
+  .main {
+    margin: 0 17em 10em 17em;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 910px) {
+  .main {
+    margin: 0 12em 10em 12em;
+  }
+  .quoteBody {
+    margin: 1em 1em 0 1em;
+  }
+}
+
+@media only screen and (max-width: 910px) and (min-width: 500px) {
+  .main {
+    margin: 0 10em 10em 10em;
+  }
+  .quoteBody {
+    margin: 1em 1.5em 0 0;
+  }
+}
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+
+  .main, .video, #navBar {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+/* stop */
