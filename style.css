@@ -79,7 +79,7 @@ body {
 
 .header {
   font-family: "GeForce";
-
+  text-align:left;
   color: #aa60ff;
   font-size: 4vw;
   padding-bottom: 0.0em;
@@ -122,8 +122,8 @@ body {
 
 .letterLabel2 {
   text-align: center;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   left: 0;
   position: absolute;
   top: 2em;
@@ -241,31 +241,98 @@ body {
     margin-bottom:2em;
 }
 
+iframe{
+  display:block;
+  margin:0 auto;
+  padding:2em;
+}
+
 
 #doc3d, #doc3dHOV {
-  width: 30%;
+  width: 50%;
   border-radius: 2em;
 }
 #sucuk, #sucukHOV {
   width: 40%;
-  border-radius: 2em;
+  border-radius: 4em;
 }
 #ada, #adaHOV {
   width: 60%;
-  border-radius: 2em;
+  border-radius: 4em;
 }
 
+#daan, #daanHOV {
+  width: 50%;
+  border-radius: 4em;
+}
+
+#gilles, #gillesHOV {
+  width: 50%;
+  border-radius: 4em;
+}
+
+#adabrain, #adabrainHOV {
+  width: 50%;
+  border-radius: 4em;
+}
+
+
 #ocmode, #ocmodeHOV {
-  width: 30%;
-  border-radius: 2em;
+  width: 50%;
+  border-radius: 4em;
   margin-bottom:2em;
+}
+
+#gpu, #gpuHOV {
+  width: 90%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#materials, #materialsHOV {
+  width: 90%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#cinebenchr15, #cinebenchr15HOV {
+  width: 90%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#ryzen, #ryzenHOV {
+  width: 90%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#adapc, #adapcHOV {
+  width: 50%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#mess, #messHOV {
+  width: 50%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+
+#ram, #ramHOV {
+  width: 50%;
+  border-radius: 4em;
+  margin-bottom:2em;
+}
+#list{
+  padding-bottom: 2em;
 }
 #ocmode{
    border:1px solid #021a40;
 }
 #doc3d2, #doc3d2HOV {
   width: 45%;
-  border-radius: 2em;
+  border-radius: 4em;
 }
 #doc3d {
   outline: solid grey 0.1em;
@@ -273,7 +340,7 @@ body {
 
 #dental3d, #dental3dHOV {
   width: 95%;
-  border-radius: 2em;
+  border-radius: 4em;
 }
 
 #typeColor {
@@ -291,6 +358,13 @@ body {
   font-weight: bold;
   font-size: 2.60em;
   margin: 2em 0 0.0em 0;
+}
+.bodyHeader2 {
+  color: black;
+  font-weight: bold;
+  font-size: 2.60em;
+  margin: 0em 0 0.6em 0;
+  text-align:middle;
 }
 
 .lingHeader {
@@ -315,7 +389,7 @@ body {
 
 .quoteBody {
   font-size: 3.5em;
-  /*margin: 1em 3.5em 0 3.5em;*/
+  margin: 1em 3.5em 0 3.5em;
 
   color: #aa60ff;
 }
@@ -323,8 +397,8 @@ body {
 .quoteAuthor {
   font-size: 3.5em;
   color: #aa60ff;
-  margin-top:0em;
-  margin-bottom: 2em;
+  margin: 0 0 0 0;
+  padding-bottom:1em;
 }
 
 /* part list */
@@ -351,7 +425,7 @@ body {
 
 .partImg {
   max-width: 85%;
-  max-height: 85%;
+  max-height: 100%;
   height: auto;
 }
 
